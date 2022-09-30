@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap");
+body {
+  background-image: url(assets/bg.jpg);
+  outline: none;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  font-family: "Abyssinica SIL", serif;
+  border: none;
+  background-repeat: repeat;
+}
+#sider {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  padding-left: 2em;
+  padding-top: 2em;
+  text-align: end;
+  padding-right: 1em;
+  border-right: 10px double rgb(85, 40, 111);
+}
+#header {
+  height: 30%;
+  width: 80%;
+  left: 27em;
+  position: absolute;
+  padding-left: 4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 10px double rgb(85, 40, 111);
+  margin-left: 0.3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+#footer {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  margin-top: 2em;
+  border-top: 10px double rgb(85, 40, 111);
+  right: 0.75em;
+  padding-right: -4em;
+}
+#main {
+  left: 28em;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 20em;
+  padding-left: 4em;
+}
+#photo {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  border: 2px solid rgb(85, 40, 111);
+  transition: 1s;
+}
+#photo:hover {
+  transform: scale(1.3);
+  border-radius: 0;
+  transition: 1s;
+  margin-bottom: 2em;
+}
+li {
+  margin-bottom: 0.5em;
+  list-style: none;
+  margin-left: -3em;
+}
+#header-left {
+  background-color: rgb(188, 150, 230);
+  border-radius: 1em 1em;
+  width: 20%;
+  padding-left: 1em;
+  margin-right: 2em;
+  transition: 500ms;
+}
+#header-right {
+  background-color: rgb(188, 150, 230);
+  border-radius: 1em 1em;
+  padding: 1em;
+  margin-top: 1em;
+  width: 30em;
+  transition: 500ms;
+}
+#header-rightest {
+  background-color: rgb(188, 150, 230);
+  border-radius: 1em 1em;
+  padding: 1em;
+  margin: 3em 0 0 2em;
+  width: 25em;
+  height: 10em;
+  transition: 500ms;
+}
+#education {
+  display: flex;
+  justify-content: space-between;
+}
+.education {
+  display: flex;
+  align-items: center;
+  width: 20em;
+  height: 2em;
+  background-color: bisque;
+  border-radius: 2em 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  justify-content: space-between;
+  /* margin-left: 3em; */
+  border: 1px solid rgb(85, 40, 111);
+  transition: 500ms;
+}
+.education p {
+  margin-left: 2em;
+  padding-left: 1em;
+}
+
+#edbg {
+  text-align: center;
+  padding-bottom: 1em;
+}
+#profession {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+  column-gap: 1em;
+  row-gap: 2em;
+}
+.profession {
+  padding: 1em;
+  padding-right: 2em;
+  background-color: rgb(188, 150, 230);
+  border: 1px solid rgb(85, 40, 111);
+  border-radius: 2em 2em;
+  transition: 500ms;
+}
+.topgrid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.profession p {
+  text-align: center;
+}
+.profession h3 {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.year {
+  width: 10em;
+  font-size: 1.1em;
+  background-color: rgb(85, 40, 111);
+  border-radius: 3em 3em;
+  text-align: center;
+  line-height: 1em;
+  color: rgb(188, 150, 230);
+  border: 1px solid beige;
+}
+#prbg {
+  text-align: center;
+  padding-bottom: 0.8em;
+  padding-top: 1em;
+}
+#footer h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+#names {
+  display: flex;
+  justify-content: space-around;
+}
+.refs {
+  background-color: rgb(188, 150, 230);
+  width: 15em;
+  text-align: center;
+  border-radius: 2em 2em;
+  font-weight: 700;
+  border: 1px solid rgb(85, 40, 111);
+  transition: 500ms;
+}
+i {
+  padding: 0 10px;
+}
+
+#sider p {
+  font-size: 1.2em;
+}
+
+.lileft {
+  text-align: start;
+  margin-top: 0.3em;
+}
+.liright {
+  text-align: end;
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  user-select: none;
+}
+
+#header-left:hover,
+#header-right:hover,
+#header-rightest:hover,
+.education:hover,
+.profession:hover,
+.refs:hover {
+  transform: scale(1.1);
+  transition: 500ms;
+}
