@@ -17,7 +17,7 @@ body {
   width: 15%;
   height: 100vh;
   position: fixed;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-top: 2em;
   text-align: end;
   padding-right: 1em;
@@ -317,4 +317,143 @@ h1 {
 #th5:hover i {
   transform: rotate3d(1, 1, 1, 360deg);
   transition: 1s;
+}
+
+@media only screen and (max-width: 1180px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  #header {
+    max-height: 30vh;
+    padding-right: 1em;
+  }
+  #main {
+    top: 38vh;
+  }
+  #education {
+    flex-direction: column;
+  }
+  .education {
+    margin-bottom: 1em;
+  }
+  .topgrid {
+    flex-direction: column;
+  }
+  .year {
+    width: auto;
+    padding: 0 1em 0 1em;
+  }
+  .refs {
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #sider {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    max-width: 100%;
+  }
+  #main {
+    top: 47em;
+    border: none;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  #header-left,
+  #header-right,
+  #header-rightest {
+    max-width: 100em;
+    width: 75%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.5em;
+
+    min-height: auto;
+  }
+  #profession {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #edbg {
+    margin-bottom: 0;
+  }
+  .profession {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25em;
+  }
+  .year {
+    width: auto;
+    font-size: 0.7em;
+  }
+  #names {
+    flex-direction: column;
+    align-items: center;
+  }
+  .refs {
+    margin-bottom: 1em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #footer {
+    margin-top: 1em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  #education {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .education {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 85%;
+  }
+  .education p {
+    padding: 0;
+    margin: 0 0 1.5em 0;
+  }
+  body {
+    border: 2px double rgb(230, 194, 41);
+    margin: 0.5em;
+    height: 100vh;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
